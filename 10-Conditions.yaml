@@ -7,5 +7,5 @@
     register: User # nothing but we are keeping the output of the previuos command in a variable User
 
   - name: Task for printing the output
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "user info is follows {{User}}"
