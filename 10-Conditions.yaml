@@ -5,7 +5,7 @@
   - name: Task for adding a user if not exits
     ansible.builtin.command: id expense
     register: User # nothing but we are keeping the output of the previuos command in a variable User
-      ignore_erros: true
+    ignore_erros: True
 
   - name: Task for printing the output
     ansible.builtin.debug:
