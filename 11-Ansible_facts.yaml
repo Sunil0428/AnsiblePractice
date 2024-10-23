@@ -1,0 +1,6 @@
+- name: Playbook for pritning ansible facts
+  hosts: web
+  tasks:
+  - name: Task for printing ansible facts 
+    ansible.builtin.debug:
+      msg: "here are printing ansible facts {{ansible_facts}}"
