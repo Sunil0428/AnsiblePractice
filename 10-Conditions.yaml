@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Task for adding a user if not exits
-    ansible.built.commad: id expense
+    ansible.builtin.commad: id expense
     register: User # nothing but we are keeping the output of the previuos command in a variable User
 
   - name: Task for printing the output
