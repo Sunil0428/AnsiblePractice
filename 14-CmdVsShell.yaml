@@ -3,4 +3,4 @@
   connection: local
   tasks: 
   - name: Task for checking shall Vs command
-    ansible.builtin.command: ls -l > /tmp/output.txt
+    ansible.builtin.shell: ls -l > /tmp/output.txt
