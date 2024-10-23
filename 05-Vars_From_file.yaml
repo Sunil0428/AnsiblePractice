@@ -1,0 +1,8 @@
+- name : Play Book for printing variables from a file
+  hosts: web
+  var_file:
+  - vars.yaml
+  tasks: 
+  - name: Task for printing variables from a file
+    ansible.builtin.debug:
+      msg: "I m learning a {{COURSE}} for {{DURATION}} under {{TRAINER}} training"
