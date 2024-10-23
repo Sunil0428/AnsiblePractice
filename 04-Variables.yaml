@@ -7,4 +7,4 @@
   tasks:
   - name: Printing the variables
     ansible.builtin.debug:
-      msg: "I m learning Devops for 120 days under Siva training"
+      msg: "I m learning {{COURSE}} for {{DURATION}} under {{TRAINER}} training"
