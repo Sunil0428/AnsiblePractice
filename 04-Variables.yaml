@@ -5,6 +5,13 @@
     TRAINER: "Siva"
     DURATION: "120 Days"
   tasks:
-  - name: Printing the variables
+  - name: Printing the variables TASK 01
+    ansible.builtin.debug:
+      msg: "I m learning {{COURSE}} for {{DURATION}} under {{TRAINER}} training"
+
+  - name: Printing the variables TASK 02
+    vars:
+      COURSE: "AWS"
+      TRAINER: "Abhishek"
     ansible.builtin.debug:
       msg: "I m learning {{COURSE}} for {{DURATION}} under {{TRAINER}} training"
