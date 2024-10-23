@@ -2,11 +2,16 @@
   hosts: web
   become: yes
   tasks:
-  - name: Task for adding a user if not exits
+  - name: Task for getting expense user details
     ansible.builtin.command: id expense
     register: User # nothing but we are keeping the output of the previuos command in a variable User
     ignore_errors: true
-    
+
   - name: Task for printing the output
     ansible.builtin.debug:
       msg: "user info is follows {{User}}"
+
+  - name: Task for creating the user if not exists
+    ansible.builtin.command: useradd expense
+      msg: "User expense has been created"
+    when: User.rc!=0
