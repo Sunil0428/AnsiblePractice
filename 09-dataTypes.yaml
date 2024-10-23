@@ -1,5 +1,6 @@
 - name: Playbook for printing differnet data types
   hosts: local
+  connection: local
   vars:
     Name: "Sunil"
     courses:
