@@ -1,0 +1,12 @@
+- name: Playbook for loop demo in Ansible
+  hosts: web
+  become: yes
+  tasks: 
+  - name: Task for installing packages in a loop
+    ansible.builtin.package:
+      name: {item}
+      state: present
+    loop:
+    - mysql
+    - nginx
+    - nodejs
