@@ -1,0 +1,19 @@
+- name: Playbook for printing differnet data types
+  hosts: local
+  vars:
+    Name: "Sunil"
+    courses:
+    -AWS
+    -Ansible
+    -Shell
+    Learned: true
+    Family:
+      Father: Sunil
+      Mother: Bhuvana
+      Daughter: Darshana
+      Son: Jaiveer
+
+  tasks: 
+  - name: Task for printing different data types in Ansible
+    ansible.builtin.debug:
+      msg: "Hii {{Name}} Courses I learned {{courses}} , is that {{Learned}} having a family of {{Family}}"
