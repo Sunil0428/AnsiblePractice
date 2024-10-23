@@ -4,7 +4,7 @@
   become: yes  # Run with elevated privileges (sudo)
   tasks:
     - name: Install Nginx
-      yum:
+      ansible.builtin.package:
         name: nginx
         state: present
     - name: Ensure Nginx is started
