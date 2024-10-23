@@ -7,6 +7,6 @@
     register: User # nothing but we are keeping the output of the previuos command in a variable User
     ignore_errors: true
 
-  - name: Task for printing the output
-    ansible.builtin.debug:
-      msg: "user details as follows: {{User}}"
+  - name: Creating user expense if not exists
+    ansible.builtin.command: useradd expense
+    when: User.rc!=0
