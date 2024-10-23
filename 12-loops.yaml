@@ -4,9 +4,9 @@
   tasks: 
   - name: Task for installing packages in a loop
     ansible.builtin.package:
-      name: {item}
+      name: "{{item}}"
       state: present
     loop:
     - mysql
     - nginx
-    - nodejs
+    - postfix
