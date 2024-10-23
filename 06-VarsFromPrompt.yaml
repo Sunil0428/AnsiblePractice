@@ -15,4 +15,4 @@
   tasks:
   - name: Task for printing the vars from prompt
     ansible.builtin.debug:
-      msg: "I m learning {{Course}} for {{Duration}} under {{Tainer}} training"
+      msg: "I m learning {{Course}} for {{Duration}} under {{Trainer}} training"
