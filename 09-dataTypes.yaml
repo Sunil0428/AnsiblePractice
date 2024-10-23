@@ -3,9 +3,9 @@
   vars:
     Name: "Sunil"
     courses:
-    -AWS
-    -Ansible
-    -Shell
+    - AWS
+    - Ansible
+    - Shell
     Learned: true
     Family:
       Father: Sunil
