@@ -1,0 +1,10 @@
+- name: Playbook for installing and removing packages through loop
+  hosts: web
+  become: yes
+  tasks:
+  - name: Task for installing and removing packages
+    ansible.builtin.package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+  loop:
+  - {name: mysql , state: absent}
