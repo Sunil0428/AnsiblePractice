@@ -1,0 +1,6 @@
+- name: Playbook for Command Vs Shell demo
+  hosts: local
+  connection: local
+  tasks: 
+  - name: Task for checking shall Vs command
+    ansible.builtin.command: ls -l > /tmp/output.txt
