@@ -1,6 +1,6 @@
 - name : Play Book for printing variables from a file
   hosts: web
-  vars_file:
+  vars_files:
   - vars.yaml
   tasks: 
   - name: Task for printing variables from a file
