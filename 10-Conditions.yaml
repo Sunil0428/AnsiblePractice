@@ -9,9 +9,4 @@
 
   - name: Task for printing the output
     ansible.builtin.debug:
-      msg: "user info is follows {{User}}"
-
-  - name: Task for creating the user if not exists
-    ansible.builtin.command: useradd expense
-      msg: "User expense has been created"
-    when: User.rc!=0
+      msg: "user info is follows {{User}}
