@@ -1,0 +1,21 @@
+- name: Play book for creating ec2 and R53 records in AWS
+  hosts: local
+  connection: local
+  vars:
+    instance_type: t2.micro
+    image_id: ami-09c813fb71547fc4f
+    sg_id: sg-06a09470c9e6f41b9
+    subnet_id: subnet-0ab5c49c37f01dce6
+  tasks: 
+  - name: Task for creating ec2 instance in AWS
+    amazon.aws.ec2_instance:
+      name: {{item}}
+      instance_type: {{instance_type}}
+      image_id: {{image_id}}
+      security_group: {{sg_id}}
+      subnet_id: {{subnet_id}}
+    loop:
+    - mysql
+    - backend
+    - frontend
+    register: ec2Instances

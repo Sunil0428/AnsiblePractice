@@ -3,4 +3,5 @@
   connection: local
   tasks: 
   - name: Task for checking shall Vs command
-    ansible.builtin.shell: ls -l > /tmp/output.txt
+    ansible.builtin.shell: ls -l > /tmp/output.txt #shall command will login into the system while exceuting these commands
+    # where as command cant login into the server but it is useful for running simple plane commands
