@@ -3,5 +3,7 @@
   tasks:
   - name: Task for printing ansible facts 
     ansible.builtin.debug:
-      msg: "here are printing ansible facts {{ansible_facts.distribution}}"
+      msg: 
+      - "here are printing ansible facts {{ansible_facts.distribution}}"
+      - "Hey I m writing another message {{ansible_facts.distribution_release}}"
       
