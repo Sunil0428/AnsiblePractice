@@ -9,11 +9,11 @@
   tasks: 
   - name: Task for creating ec2 instance in AWS
     amazon.aws.ec2_instance:
-      name: {{item}}
-      instance_type: {{instance_type}}
-      image_id: {{image_id}}
-      security_group: {{sg_id}}
-      subnet_id: {{subnet_id}}
+      name: "{{item}}"
+      instance_type: "{{instance_type}}"
+      image_id: "{{image_id}}"
+      security_group: "{{sg_id}}"
+      subnet_id: "{{subnet_id}}"
     loop:
     - mysql
     - backend
