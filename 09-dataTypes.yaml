@@ -18,3 +18,4 @@
   - name: Task for printing different data types in Ansible
     ansible.builtin.debug:
       msg: "Hii {{Name}} Courses I learned {{courses}} , is that {{Learned}} having a family of {{Family}}"
+    when: Name="Sunil"
