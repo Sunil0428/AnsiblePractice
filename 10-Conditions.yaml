@@ -1,0 +1,11 @@
+- name: Playbook for creating a user if not presents
+  hosts: web
+  become: yes
+  tasks:
+  - name: Task for adding a user if not exits
+    ansible.built.commad: id expense
+    register: User # nothing but we are keeping the output of the previuos command in a variable User
+
+  - name: Task for printing the output
+    ansible.buitin.debug:
+      msg: "user info is follows {{User}}"
