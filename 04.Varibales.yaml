@@ -1,0 +1,10 @@
+- name: Variables in Ansible
+  hosts: web
+  vars:
+    COURSE: "DevOps"
+    TRAINER: "Siva"
+    DURATION: "120 Days"
+  tasks:
+  - name: Printing the variables
+    ansibel.builtin.debug:
+      msg: "I m learning Devops for 120 days under Siva training"
