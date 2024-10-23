@@ -9,4 +9,3 @@
 
   - name: Task for printing the output
     ansible.builtin.debug:
-      msg: "user info is follows {{User}}
