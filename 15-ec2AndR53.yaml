@@ -22,4 +22,4 @@
 
   - name: Task for printing the output
     ansible.builtin.debug:
-      msg: {{ec2Instances}}
+      msg: "{{ec2Instances}}"
