@@ -19,3 +19,7 @@
     - backend
     - frontend
     register: ec2Instances
+
+  - name: Task for printing the output
+    ansible.builtin.debug:
+      msg: {{ec2Instances}}
