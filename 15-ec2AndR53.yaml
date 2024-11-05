@@ -6,7 +6,7 @@
     image_id: ami-09c813fb71547fc4f
     sg_id: sg-06a09470c9e6f41b9
     subnet_id: subnet-0ab5c49c37f01dce6
-    zone: daws81s.online
+    zone: mydevtrain.online
   tasks: 
   - name: Task for creating ec2 instance in AWS
     amazon.aws.ec2_instance:
