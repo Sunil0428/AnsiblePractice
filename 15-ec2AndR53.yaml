@@ -4,7 +4,7 @@
   vars:
     instance_type: t2.micro
     image_id: ami-09c813fb71547fc4f
-    sg_id: sg-088487e040135fea0
+    sg_id: sg-05c511c3c2e1ad0a3
     subnet_id: subnet-0a2d77861319ceeff
     zone: mydevtrain.online
   tasks: 
